@@ -334,3 +334,55 @@ The most important of these settings is core.autocrlf. Git for Windows by defaul
 this system level configuration. The Git installation location can be configured on the
 Team > Git > Configuration preference page's 'System Settings' tab.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.core.net 1 0 2016-10-19 09:25:38.313
+!MESSAGE System property http.proxyHost is set to proxy.iescierva.net but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2016-10-19 09:25:38.313
+!MESSAGE System property http.proxyPort is set to 3128 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2016-10-19 09:25:38.313
+!MESSAGE System property https.proxyHost is set to proxy.iescierva.net but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2016-10-19 09:25:38.314
+!MESSAGE System property https.proxyPort is set to 3128 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2016-10-19 09:26:16.114
+!MESSAGE System property http.proxyHost is set to proxy.iescierva.net but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2016-10-19 09:26:16.115
+!MESSAGE System property http.proxyPort is set to 3128 but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2016-10-19 09:26:16.115
+!MESSAGE System property https.proxyHost is set to proxy.iescierva.net but should not be set.
+
+!ENTRY org.eclipse.core.net 1 0 2016-10-19 09:26:16.115
+!MESSAGE System property https.proxyPort is set to 3128 but should not be set.
+!SESSION 2016-10-19 09:33:03.418 -----------------------------------------------
+eclipse.buildId=4.4.0.I20140606-1215
+java.version=1.7.0_91
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.standard.product
+Command-line arguments:  -data /home/dam16-23/Escritorio/Eclipse -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.standard.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-10-19 09:33:24.821
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 4 0 2016-10-19 09:49:22.603
+!MESSAGE The current branch is not configured for pull
+!STACK 0
+org.eclipse.jgit.api.errors.InvalidConfigurationException: No value for key remote.origin.url found in configuration
+	at org.eclipse.jgit.api.PullCommand.call(PullCommand.java:239)
+	at org.eclipse.egit.core.op.PullOperation$1.run(PullOperation.java:97)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2313)
+	at org.eclipse.egit.core.op.PullOperation.execute(PullOperation.java:128)
+	at org.eclipse.egit.ui.internal.pull.PullOperationUI.execute(PullOperationUI.java:139)
+	at org.eclipse.egit.ui.internal.pull.PullOperationUI$1.runInWorkspace(PullOperationUI.java:114)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
